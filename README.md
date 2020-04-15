@@ -64,8 +64,10 @@ How to run it:
   <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/master/utils/prompt.js"> To run `node utils/prompt.js` </a>
 </details>
 <details>
-  <summary> file Upload </summary>
+  <summary> File Upload </summary>
   <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/master/controllers/file.controller.js"> routes</a><br>
-  <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/master/public/views/fileUpload.html"> html file </a>
+  <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/master/public/views/fileUpload.html"> html file </a><br>
+  To upload file got to http://localhost:8080/file/uploadSingle <br>
+  Check the uploads file in your root directory, you will find your uploaded files
 </details>
 </details>
