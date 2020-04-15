@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>File Upload</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <form action="/file/uploadSingle" method="post" enctype="multipart/form-data">
+        <label for="singleFile">Single text file</label>
+        <input id="singleFile" type="file" name="resume" />
+        <button type="submit"> upload </button>
+    </form>
+    <br>
+    <form action="/file/uploadMultiple" method="post" enctype="multipart/form-data">
+        <label for="multipleFile">Multiple Image file</label>
+        <input id="multipleFile" accept='image/*' type="file" name="uploadedImages" multiple/>
+        <!-- accept flag needed to specify file type -->
+        <button type="submit"> upload </button>
+    </form>
+</body>
+</html>
