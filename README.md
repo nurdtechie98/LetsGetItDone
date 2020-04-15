@@ -23,14 +23,16 @@ How to run it:
 </details>
 <details>
   <summary>Demonstrate the use of JSON API with express.js</summary>
-   <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/4bca686b23f280e50f9e86738e458fc592419c80/app.js#L16"> middleware </a> <br><a href="https://github.com/nurdtechie98/LetsGetItDone/blob/4bca686b23f280e50f9e86738e458fc592419c80/controllers/user.controller.js#L8-#L13"> sending and parsing</a>
+  <ul>
+   <li><a href="https://github.com/nurdtechie98/LetsGetItDone/blob/4bca686b23f280e50f9e86738e458fc592419c80/app.js#L16"> middleware </a></li>
+    <li><a href="https://github.com/nurdtechie98/LetsGetItDone/blob/4bca686b23f280e50f9e86738e458fc592419c80/controllers/user.controller.js#L8-#L13"> sending and parsing</a></li>
 </details>
 <details>
   <summary>Server and client application</summary>
   TLS: demonstrate the use of Server and client application using node.js<br>
-  Implemeted using websockets, server is created in <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/4bca686b23f280e50f9e86738e458fc592419c80/app.js#L52-#L59">app.js</a> itself<br>
-  Client file named <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/master/client.js">client.js<a><br>
-  In order to run start our server, then in another tab `node client.js`
+  Implemeted using websockets<ul><li> server is created in <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/4bca686b23f280e50f9e86738e458fc592419c80/app.js#L52-#L59">app.js</a> itself</li>
+  <li>Client file named <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/master/client.js">client.js<a><br>
+  In order to run start our server, then in another tab `node client.js`</li></ul>
 </details>
 <details>
   <summary>Setting cookies with cookie-parser: Demonstrate an example for setting and reading cookies using the cookie-parser module</summary>
