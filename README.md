@@ -71,8 +71,8 @@ How to run it:
   <summary> File Upload </summary><ul>
   <li><a href="https://github.com/nurdtechie98/LetsGetItDone/blob/master/controllers/file.controller.js"> routes</a></li>
   <li><a href="https://github.com/nurdtechie98/LetsGetItDone/blob/master/public/views/fileUpload.html"> html file </a></li>
-  <li>To upload file got to http://localhost:8080/file/uploadSingle </li>
-  <li>Check the uploads file in your root directory, you will find your uploaded files</li>
+  <li>To upload file go to  <a href="http://localhost:8080/file/uploadFile">upload file link</a></li>
+  <li>Check the uploads directory in your root directory, you will find all your uploaded files</li>
   </ul>
 </details>
 </details>
