@@ -35,41 +35,44 @@ How to run it:
   In order to run start our server, then in another tab `node client.js`</li></ul>
 </details>
 <details>
-  <summary>Setting cookies with cookie-parser: Demonstrate an example for setting and reading cookies using the cookie-parser module</summary>
-  <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/4bca686b23f280e50f9e86738e458fc592419c80/app.js#L18">middleware to be added</a><br>
-  <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/4bca686b23f280e50f9e86738e458fc592419c80/controllers/auth.controller.js#L27">setting of cookies</a><br>
-  <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/4bca686b23f280e50f9e86738e458fc592419c80/utils/middleware.js#L42">reading of cookies</a><br>
-  <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/4bca686b23f280e50f9e86738e458fc592419c80/controllers/auth.controller.js#L39">Delete Cookies</a><br>
+  <summary>Setting cookies with cookie-parser: Demonstrate an example for setting and reading cookies using the cookie-parser module</summary> 
+  <ul>
+  <li>
+  <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/4bca686b23f280e50f9e86738e458fc592419c80/app.js#L18">middleware to be added</a></li>
+  <li><a href="https://github.com/nurdtechie98/LetsGetItDone/blob/4bca686b23f280e50f9e86738e458fc592419c80/controllers/auth.controller.js#L27">setting of cookies</a></li>
+  <li><a href="https://github.com/nurdtechie98/LetsGetItDone/blob/4bca686b23f280e50f9e86738e458fc592419c80/utils/middleware.js#L42">reading of cookies</a></li>
+  <li><a href="https://github.com/nurdtechie98/LetsGetItDone/blob/4bca686b23f280e50f9e86738e458fc592419c80/controllers/auth.controller.js#L39">Delete Cookies</a></li></ul>
 </details>
 <details>
-  <summary>Custom middleware to check the user age is valid or not</summary>
-  <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/4bca686b23f280e50f9e86738e458fc592419c80/utils/middleware.js#L30-#L39">define</a><br>
-  <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/4bca686b23f280e50f9e86738e458fc592419c80/controllers/user.controller.js#L6">usage</a>
+  <summary>Custom middleware to check the user age is valid or not</summary><ul>
+  <li><a href="https://github.com/nurdtechie98/LetsGetItDone/blob/4bca686b23f280e50f9e86738e458fc592419c80/utils/middleware.js#L30-#L39">define</a></li>
+  <li><a href="https://github.com/nurdtechie98/LetsGetItDone/blob/4bca686b23f280e50f9e86738e458fc592419c80/controllers/user.controller.js#L6">usage</a></li></ul>
 </details>
 <details>
-  <summary>File operation</summary>
-  <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/master/utils/files.js">definition</a>
+  <summary>File operation</summary><ul>
+  <li><a href="https://github.com/nurdtechie98/LetsGetItDone/blob/master/utils/files.js">definition</a></li></ul>
 </details>
 <details>
-  <summary>Authenticate with an email address</summary>
-  <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/master/controllers/auth.controller.js">routes</a><br>
-  <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/4bca686b23f280e50f9e86738e458fc592419c80/utils/middleware.js#L41-#L50">middleware</a>
+  <summary>Authenticate with an email address</summary><ul>
+  <li><a href="https://github.com/nurdtechie98/LetsGetItDone/blob/master/controllers/auth.controller.js">routes</a></li>
+  <li><a href="https://github.com/nurdtechie98/LetsGetItDone/blob/4bca686b23f280e50f9e86738e458fc592419c80/utils/middleware.js#L41-#L50">middleware</a></li></ul>
 </details>
 <details>
-  <summary>Cluster module</summary>
-  <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/master/cluster.js">main code</a><br>
-  <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/master/worker.js">worker code basically our normal entire app.js in function</a><br>
-  to run `npm run cluster`
+  <summary>Cluster module</summary><ul>
+  <li><a href="https://github.com/nurdtechie98/LetsGetItDone/blob/master/cluster.js">main code</a></li>
+  <li><a href="https://github.com/nurdtechie98/LetsGetItDone/blob/master/worker.js">worker code basically our normal entire app.js in function</a><br></li>
+  <li>to run `npm run cluster`</li></ul>
 </details>
 <details>
   <summary>Prompting user input via CLI</summary>
   <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/master/utils/prompt.js"> To run `node utils/prompt.js` </a>
 </details>
 <details>
-  <summary> File Upload </summary>
-  <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/master/controllers/file.controller.js"> routes</a><br>
-  <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/master/public/views/fileUpload.html"> html file </a><br>
-  To upload file got to http://localhost:8080/file/uploadSingle <br>
-  Check the uploads file in your root directory, you will find your uploaded files
+  <summary> File Upload </summary><ul>
+  <li><a href="https://github.com/nurdtechie98/LetsGetItDone/blob/master/controllers/file.controller.js"> routes</a></li>
+  <li><a href="https://github.com/nurdtechie98/LetsGetItDone/blob/master/public/views/fileUpload.html"> html file </a></li>
+  <li>To upload file got to http://localhost:8080/file/uploadSingle </li>
+  <li>Check the uploads file in your root directory, you will find your uploaded files</li>
+  </ul>
 </details>
 </details>
