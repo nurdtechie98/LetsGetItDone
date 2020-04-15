@@ -62,7 +62,7 @@ How to run it:
 <details>
   <summary>Prompting user input via CLI</summary>
   <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/master/utils/prompt.js"> To run `node utils/prompt.js` </a>
-</details><br>
+</details>
 <details>
   <summary> file Upload </summary>
   <a href="https://github.com/nurdtechie98/LetsGetItDone/blob/master/controllers/file.controller.js"> routes</a><br>
