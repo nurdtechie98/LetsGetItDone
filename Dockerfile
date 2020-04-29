@@ -10,6 +10,10 @@ RUN apt-get update && \
     cd LetsGetItDone && \
     npm i
 
+ARG DB_URI
+
+ENV DB_URI="${DB_URI}"
+
 EXPOSE 8080
 
 WORKDIR /app/LetsGetItDone
