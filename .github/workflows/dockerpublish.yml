@@ -59,7 +59,7 @@ jobs:
         env: 
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         run: | 
-          docker tag ${{ IMAGE_NAME }} registry.heroku.com/inbri/web
+          docker tag $IMAGE_NAME registry.heroku.com/inbri/web
           docker push registry.heroku.com/inbri/web
         
       - name: Release
