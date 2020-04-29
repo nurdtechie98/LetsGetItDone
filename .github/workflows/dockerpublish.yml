@@ -49,7 +49,7 @@ jobs:
         run: heroku container:login
       
       - name: Build image
-        run: docker build --tag test_api --file Dockerfile --build-arg DB_URI=${{ secrets.DB_URI }} .
+        run: docker build --tag test_api --build-arg DB_URI=${{ secrets.DB_URI }} . --file Dockerfile
 
       - name: Push image
         env: 
