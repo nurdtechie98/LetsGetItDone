@@ -10,9 +10,7 @@ RUN apt-get update && \
     cd LetsGetItDone && \
     npm i
 
-ARG DB_URI
-
-ENV DB_URI="${DB_URI}"
+ENV DB_URI=mongodb+srv://root:qwerty1234@cluster0-va4ny.mongodb.net/test?retryWrites=true&w=majority
 
 EXPOSE 8080
 
