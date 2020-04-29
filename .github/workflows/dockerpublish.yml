@@ -51,11 +51,16 @@ jobs:
         env: 
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         run: heroku container:login
+      
+      - name: Build image
+        run: heroku build -t ${{ IMAGE_NAME }} --build-arg YOURAPP_ENV=${{ secrets.DB_URI }} .
 
       - name: Push image
         env: 
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-        run: heroku container:push -a ${{ secrets.HEROKU_APP_NAME }} web 
+        run: | 
+          docker tag ${{ IMAGE_NAME }} registry.heroku.com/inbri/web
+          docker push registry.heroku.com/inbri/web
         
       - name: Release
         env: 
