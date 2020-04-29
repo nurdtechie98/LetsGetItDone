@@ -15,30 +15,9 @@ on:
 
 jobs:
 
-  build:
-    runs-on: ubuntu-latest
-    if: github.event_name == 'push'
-
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Log into registry
-        env: 
-          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-        run: heroku container:login
-      
-      - name: Build and push image
-        env: 
-          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-        run: |
-          docker build . --file Dockerfile --tag image --build-arg DB_URI=${{ secrets.DB_URI }} 
-
   # Push image to GitHub Packages.
   # See also https://docs.docker.com/docker-hub/builds/
   push:
-    # Ensure test job passes before pushing image.
-    needs: build
-
     runs-on: ubuntu-latest
     if: github.event_name == 'push'
 
@@ -54,6 +33,7 @@ jobs:
         env: 
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         run: |
+          docker build . --file Dockerfile --tag image 
           docker tag image registry.heroku.com/inbri/web
           docker push registry.heroku.com/inbri/web
         
