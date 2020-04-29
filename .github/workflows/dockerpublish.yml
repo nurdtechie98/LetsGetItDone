@@ -49,9 +49,11 @@ jobs:
         run: heroku container:login
       
       - name: Build and push image
+        env: 
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         run: |
-          docker build . --file Dockerfile --tag test_api --build-arg DB_URI=${{ secrets.DB_URI }} 
-          docker tag test_api registry.heroku.com/inbri/web
+          docker build . --file Dockerfile --tag test_api:$ --build-arg DB_URI=${{ secrets.DB_URI }} 
+          docker tag test_api:$ registry.heroku.com/inbri/web
           docker push registry.heroku.com/inbri/web
         
       - name: Release
